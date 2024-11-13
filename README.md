@@ -32,15 +32,17 @@ Log into your Azure account using either the Azure CLI or the Azure Portal.
       terraform init -var-file="../variables.tf"
    ```
 
-   If you have more than one API configuration, create additional tfvars files. You can use a naming convention like variables_<api>_<version>.tf to flexibly manage multiple APIs.
-   
-   
-
 ### Step 4: Terraform Plan
 
    ```bash
    terraform plan  -var-file="terraform.tfvars"
    ```
+If you have more than one API configuration, create additional tfvars files. You can use a naming convention like terraform_&lt;api&gt;_&lt;version&gt;.tfvars to flexibly manage multiple APIs.
+
+   ```bash
+   terraform plan  -var-file="terraform_priavateITS_1_0_0.tfvars"
+   ```
+
 ### Step 5: Apply
 
    ```bash
