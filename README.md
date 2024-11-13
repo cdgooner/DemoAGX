@@ -16,22 +16,29 @@ Log into your Azure account using either the Azure CLI or the Azure Portal.
 #### Using Azure CLI
 1. Open a terminal or command prompt.
 2. Run the following command to log in:
+   
    ```bash
    az login
 
-
 ### Step 2:  Go to root folder of main.tf
 
-cd ../TerraformScript/Private_ITS
+   ```bash
+   cd ../TerraformScript/Private_ITS
 
 
 ### Step 3:  Terraform initiation
-terraform init -var-file="../variables.tf"
+
+   ```bash
+   terraform init -var-file="../variables.tf"
 
 
 ### Step 4: Terraform Plan
-terraform plan  -var-file="terraform.tfvars"
+
+   ```bash
+   terraform plan  -var-file="terraform.tfvars"
 
 
 ### Step 5: Apply
-terraform apply -v -var-file="terraform.tfvars"
+
+   ```bash
+   terraform apply -v -var-file="terraform.tfvars"
