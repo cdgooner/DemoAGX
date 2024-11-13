@@ -23,9 +23,9 @@ Log into your Azure account using either the Azure CLI or the Azure Portal.
 
 ### Step 2:  Go to root folder of main.tf
 
-      ```bash
-         cd ../TerraformScript/Private_ITS
-      ```
+   ```bash
+      cd ../TerraformScript/Private_ITS
+   ```
 ### Step 3:  Terraform initiation
 
    ```bash
